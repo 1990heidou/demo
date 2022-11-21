@@ -14,15 +14,8 @@ import (
 /*
 istio 中有几个新的资源概念：
 gateway: gw
-网关就是用来对外暴露接口的，借助ingress的方式，通过node port 或者外部lb将接口暴露给外部调用
-
 virtual service: vs
-虚拟服务用来管理被注入的容器流量，这样服务本身只和注入的envoy进行通信，envoy通过虚拟服务进行管理流量等等
-
 destination rule: dr
-目标规则是用来定义虚拟服务可以选择的规则方式，就好比是需要注册虚拟服务，注册了该服务的哪些版本，未来在虚拟服务中定义的那些版本才有流量进入
-因此在使用虚拟服务的时候，首先需要创建目标规则
-
 service entry: se
 */
 
